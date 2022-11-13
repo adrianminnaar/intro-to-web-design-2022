@@ -1,0 +1,32 @@
+ /* The animation code */
+@keyframes animatedSquare {
+  0%   {background-color: red;}
+  20%  {background-color: yellow;}
+  45%  {background-color: blue;}
+  95% {background-color: green;}
+}
+
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: animatedSquare;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; 
+  position: relative;
+  top: 300px;
+  left: 300px;
+ 
+    
+} 
+#images{
+  height: 110px;
+  width: 110px;
+  position: relative;
+  left: 300px;
+  
+  
+
+  
+}
