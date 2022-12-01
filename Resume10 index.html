@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,0 shrink-to-fit=no">
 
 
-
+ <!--Bootstrap Navbar-->
 
 <head>
   <nav class="navbar navbar-inverse" style="width:100%">
@@ -16,15 +16,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"class="color-me">Resume</a>
+        <a class="navbar-brand" href="#" class="color-me">Resume</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"class="color-me">Home</a></li>
+          <li class="active"><a href="#" class="color-me">Home</a></li>
           <li><a href="#" class="color-me">Education</a></li>
-          <li><a href="#"class="color-me">Experience</a></li>
-          <li><a href="#"class="color-me">Skills</a></li>
-         
+          <li><a href="#" class="color-me">Experience</a></li>
+          <li><a href="#" class="color-me">Skills</a></li>
+
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" class="color-me"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -33,9 +33,9 @@
       </div>
     </div>
   </nav>
-  
+
   <title>Adrian Minnaar Resume</title>
-  <link rel="stylesheet" type="text/css" href="css/Resumestylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/Resumestylesheet.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
 </head>
@@ -52,31 +52,39 @@
 
   <section>
     <header id="header">
-      
 
-      <img src="images/headshot new.png" class="responsive" alt="Profile Pic" width="15%" height="15%" id="images">
+      <picture>
+        <source media="(min-width: 650px)" srcset="images/headshot 58%">
+        <source media="(min-width: 465px)" srcset="images/headshot 121%">
+        <div class="color">
+          <img src="images/headshot new.png" class="responsive" alt="Profile Pic" width="15%" height="15%" id="images">
+        </div>
 
+      </picture>
+
+ <!--Bootstrap Jumbotron-->
 
       <h1> Adrian Minnaar</h1>
       <div class="container">
         <div class="jumbotron">
           <div class="row-fluid">
             <div class="col-xs-4">
-          <p>
-          <h3>Introductory personal statement</h3>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>
-              Always had a love for everthing tech and vehicle. Started my journey in 2002 and completed my BCOM in
-              2005.Entered
-              the Automotive industry shortly after. Qualified as a Automotive Spray Painter 2015, worked for Autobody
-              Repair
-              Shop.
-              Start my own business in 2017.
+              <p>
+              <h3>Introductory personal statement</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  Always had a love for everthing tech and vehicle. Started my journey in 2002 and completed my BCOM in
+                  2005.Entered
+                  the Automotive industry shortly after. Qualified as a Automotive Spray Painter 2015, worked for
+                  Autobody
+                  Repair
+                  Shop.
+                  Start my own business in 2017.
 
-            </p>
-          </div>
+                </p>
+              </div>
 
 
 
@@ -91,11 +99,13 @@
         <h2>Menu</h2>
 
         <p>
+        <aside>
           <li> <a href="#education">Education</a></li>
 
           <li> <a href="#experience">Experience</a></li>
 
           <li> <a href="#skills">Skills</a></li>
+        </aside>
 
         </p>
 
@@ -111,9 +121,9 @@
 
   <body>
     <!--List of Education-->
-        
+
     <h2 id="education">Education</h2>
- 
+
 
     <h4>Into to web at <a href="http://codespace.co.za/" target="_blank"> CodeSpace Academy </a> </h4>
 
@@ -195,13 +205,13 @@
 </main>
 
 <footer>
-  <!--My Contact Information-->
+  <!--My Contact Information--> <!--Bootstrap Card-->
 
   <h2> Contact Details </h2>
 
   <ul>
     <div class="card" style="width: 100%">
-    
+
       <div class="card-footer">
         <h4 class="card-title">Adrian Minnaar</h4>
         <p class="card-text">Lets get started.</p>
@@ -210,19 +220,28 @@
         <a href="#" class="btn btn-primary">See Profile</a>
       </div>
     </div>
+    <div>
 
-    <a href="http://instagram.com/adrianminnaar" target="_blank">
-      <img class="icons" src="Images/Instagram.png" alt="Adrian Minnaar Profile" width="80px">
-    </a>
+      <div class="logo">
 
-    <a href="http://Facebook.com/adrianminaar" target="_blank">
-      <img class="icons" src="images/Facebook-logo.png" alt="Adrian Minnaar profile" width="150px">
+        <ul>
+          <a href="http://instagram.com/adrianminnaar" target="_blank">
+            <img class="icons" src="Images/Instagram.png" alt="Adrian Minnaar Profile" width="80px">
+          </a>
+      </div>
+      <div class="logo">
+        <a href="http://Facebook.com/adrianminaar" target="_blank">
+          <img class="icons" src="images/Facebook-logo.png" alt="Adrian Minnaar profile" width="150px">
 
-    </a>
-    <a href=mailto:adrianminaar29@gail.com? subject="html link" target="_blank">
-      <img class="icons" src="images/gmail logo.png" alt="Adrian Minnaar Gmail Profile" width="110px">
-    </a>
+        </a>
+      </div>
+      <div class="logo">
+        <a href=mailto:adrianminaar29@gail.com? subject="html link" target="_blank">
+          <img class="icons" src="images/gmail logo.png" alt="Adrian Minnaar Gmail Profile" width="110px">
+        </a>
   </ul>
+  </div>
+
 
 
 </footer>

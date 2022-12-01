@@ -72,7 +72,10 @@ footer {
 .icons{
   width: 6%;
   margin: 2rem;
-  height: auto
+  height: auto;
+  position: relative;
+
+
 }
 /*Paragraph Styling*/
 p{
@@ -101,4 +104,41 @@ contents{
   margin-left: 3rem;
 
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(143, 115, 73);
+  }
+}
+aside {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 2px;
+  float: left;
+  font-style: 'Times New Roman', Times, serif;
+  background-color: lightgray;
+}
+.color img{
+  filter: grayscale(100%);  
+  transition: all 1s ease;
+  }
+  
+  .color img:hover{
+  filter: grayscale(0%);
+  filter: gray; 
+  filter: none;
+  transition: 1s ease;
+  }
+ 
+.logo:first-child:hover {
+    rotate: 45deg;
 
+ }
+.logo:nth-child(2):hover{
+  rotate: 45deg;
+}
+.logo:nth-child(3):hover{
+  rotate: 45deg;
+}
+.logo:last-child:hover{
+  rotate: 45deg;
+}
