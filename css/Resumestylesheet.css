@@ -13,9 +13,13 @@ body{
   width: 100%;
   height: auto;
 }
+.jumbotron{
+  background-image: url('../images/pexels-tim-mossholder-169.jpg');
+
+}
 .row{
   padding-top: 10px;
-  background-color:rgb(150, 135, 116)
+  background-color:rgb(145, 142, 140)
 }
 .cardfooter{
   position: relative;
@@ -29,7 +33,7 @@ body{
 
 header {
   text-align: center;
-  background-color: rgb(188, 180, 171);
+  background-color: rgb(161, 161, 161);
   
 }
 /*Header Styling*/
@@ -44,7 +48,7 @@ header {
 
 footer {
   text-align: center;
-  background-color: rgb(188, 180, 171);
+  background-color: rgb(137, 135, 132);
   padding: 3px;
   
 }
@@ -94,12 +98,13 @@ h2{
   box-sizing: border-box;
   padding-left: 2rem;
   border-style: solid;
-  text-align: left;
+  text-align: center;
 }
 /*Heading Styling*/
 h3{
   padding-left: 2rem;
   text-decoration-line: underline;
+  
   
 }
 /*Heading Styling*/
@@ -109,14 +114,10 @@ h4{
 }
 contents{
   margin-left: 3rem;
+  
 
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
 
 aside {
   width: 100%;
@@ -154,3 +155,42 @@ aside {
 .card{
   padding-left: 20px;
 }
+
+/*code for mobile devices smaller than 600px*/
+body { text-align:center }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   body { text-align: center;
+  display: block }
+
+  .main{display: flexbox;}
+
+  #Menu{
+    display:block
+  }
+} 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+  body { text-align: center; }
+   .main{display: flexbox;}
+
+  #Menu{
+    display:block
+} 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body { text-align: center; }
+  .main{display: flexbox;}
+
+ #Menu{
+   display: list-item;
+} 
+}
+
+
